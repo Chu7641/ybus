@@ -1,0 +1,108 @@
+
+/*================== Chat ===================*/
+
+.chat-wrapper {
+   .chat-main-body {
+      .chat-head {
+         padding: 0.625rem 1.5rem;
+         @media(max-width:450px){
+            padding:0.75rem;
+            .video-icon{
+               display: none;
+            }
+         }
+         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.09);
+         button {
+            height: 2.25rem;
+            width: 2.25rem;
+            font-size: 1.25rem;
+            margin: 0 0.25rem;
+         }
+      }
+      .chat-body {
+         .chat-bubble {
+            max-width: 600px;
+            padding: 0.625rem;
+            box-shadow: 0 1px 15px 1px rgba(69, 65, 78, 0.08);
+            display: flex;
+            align-items: center;
+            &.even {
+               border-radius: 20px 20px 20px 0;
+            }
+            &.odd {
+               border-radius: 20px 20px 0px 20px;
+            }
+         }
+      }
+      .chat-footer {
+         .msg-input,
+         .submit-btn {
+            border-radius: 100px !important;
+         }
+      }
+   }
+   .chat-content {
+      position: relative;
+      height: 100vh;
+      .chat-box-main {
+         position: absolute;
+         top: 0;
+         bottom: 10rem;
+         left: 0;
+         right: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}
+
+.chat-sidebar {
+   .user-wrap {
+      height: auto;
+   }
+   .search-wrapper {
+      .search-icon {
+         position: absolute;
+         right: 1rem;
+         top: 0.9rem;
+      }
+   }
+   .chat-list {
+      ul {
+         .user-list-item {
+				// color:$gray-900;
+            cursor: pointer;
+            padding: 1rem;
+            transition: all 0.3s ease-in-out;
+            .media-left {
+               .badge {
+                  position: absolute;
+                  bottom: 0px;
+               }
+            }
+            .msg-count {
+               .badge {
+                  height: 1.5rem;
+                  width: 1.5rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 0;
+               }
+            }
+            &.item-active {
+               // background-color: rgb(84,194,249);
+               // color: #ffffff;
+               background-color: #dfe4ea;
+            }
+            &:hover {
+               &:not(.item-active) {
+                  // background-color: rgb(112,251,253);
+                  background-color: #f4f4f4;
+               }
+            }
+         }
+      }
+   }
+}

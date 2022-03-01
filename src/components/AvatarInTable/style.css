@@ -1,0 +1,14 @@
+.avatar-in-table {
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+    height: 45px;
+    width: 45px;
+}
+.avatar-in-table-2 {
+    cursor: pointer;
+    vertical-align: middle;
+    height: 45px;
+    width: auto;
+    
+}

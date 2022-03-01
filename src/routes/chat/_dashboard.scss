@@ -1,0 +1,28 @@
+
+@media (max-width: 472px) {
+  .navbar-right {
+    > li {
+      &:nth-of-type(2) {
+        display: none;
+      }
+      .dropdown-group-link {
+        padding: 5px;
+        &.dropdown-toggle::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .chat-box-main img {
+  	width: 80px;
+  }
+  .page-title {
+    h2 {
+      width: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+  }
+}
